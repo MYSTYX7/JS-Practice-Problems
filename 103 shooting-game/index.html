@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shooting Game</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <main>
-      <div>
-        <button class="start">Start Game</button>
+      <div class="buttons">
+        <button id="start">Start Game</button>
+        <button id="reset">Reset</button>
       </div>
       <div>
-        <p>Player 1 - Won: <span id="p1">&nbsp</span></p>
-        <p>Player 2 - Won: <span id="p2">&nbsp</span></p>
+        <div class = "text">
+          Player 1 || Won: <span id="p1">0</span> || Final Health:
+          <span id="p1Health">100</span>
+        </div>
+        <div class = "text">
+          Player 2 || Won: <span id="p2">0</span> || Final Health:
+          <span id="p2Health">100</span>
+        </div>
+        <div class = "text"><span id="result"></span></div>
       </div>
     </main>
     <script src="script.js"></script>
