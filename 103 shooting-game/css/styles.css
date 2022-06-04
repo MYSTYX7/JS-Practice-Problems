@@ -13,10 +13,34 @@ body main {
 body main button {
   color: black;
   padding: 1rem 2rem;
-  margin: 3rem 1rem;
+  margin: 2rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
   transition-duration: 0.4s;
+}
+body main .text {
+  margin: 2rem;
+}
+body main #player {
+  background-color: rgb(255, 241, 113);
+  padding: 10px;
+  margin: 1rem;
+  border: 1px solid;
+}
+body main #win {
+  background-color: rgb(113, 170, 255);
+  padding: 10px;
+  margin: 1rem;
+  border: 1px solid;
+}
+body main #health {
+  background-color: rgb(252, 162, 162);
+  padding: 10px;
+  margin: 1rem;
+  border: 1px solid;
+}
+body main #result {
+  padding: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

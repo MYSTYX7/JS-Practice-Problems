@@ -7,7 +7,7 @@ const startButton = document.querySelector("#start");
 const resetButton = document.querySelector("#reset");
 startButton.addEventListener("click", show);
 resetButton.addEventListener("click", reset);
-resetButtonStyle()
+resetButtonStyle();
 
 function show() {
   while (p1Health > 0 || p2Health > 0) {
@@ -22,19 +22,21 @@ function show() {
       break;
     }
   }
+
   if (p1Health > p2Health) {
     p1Game++;
+    document.getElementById("p1").innerHTML = p1Game;
   } else {
     p2Game++;
+    document.getElementById("p2").innerHTML = p2Game;
   }
 
-  document.getElementById("p1").innerHTML = p1Game;
-  document.getElementById("p2").innerHTML = p2Game;
-
   if (p1Game === 3) {
+    document.getElementById("result").style.backgroundColor = "#9762b5";
     document.getElementById("result").innerHTML = `P1 wins the tournament`;
     buttonStyle();
   } else if (p2Game === 3) {
+    document.getElementById("result").style.backgroundColor = "#9762b5";
     document.getElementById("result").innerHTML = `P2 wins the tournament`;
     buttonStyle();
   }
@@ -44,7 +46,7 @@ function show() {
 }
 
 function reset() {
-  resetButtonStyle()
+  resetButtonStyle();
   p1Game = 0;
   p2Game = 0;
   document.getElementById("p1").innerHTML = p1Game;
@@ -63,11 +65,12 @@ function buttonStyle() {
   resetButton.style.cursor = "default";
 }
 
-function resetButtonStyle(){
+function resetButtonStyle() {
   startButton.disabled = false;
   startButton.style.backgroundColor = "#4caf50";
   startButton.style.cursor = "default";
   resetButton.disabled = true;
   resetButton.style.backgroundColor = "#bebebe";
   resetButton.style.cursor = "not-allowed";
+  document.getElementById("result").style.backgroundColor = "white";
 }
