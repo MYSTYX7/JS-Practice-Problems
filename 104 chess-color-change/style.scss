@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+
+  .odd {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+  }
+
+  .even {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+  }
+
+  .odd-toggle {
+    background-color: black;
+  }
+
+  .even-toggle {
+    background-color: grey;
+  }
+
+  button {
+    margin: 1rem auto;
+  }
+}
+
+
