@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+div {
+  cursor: hand;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+.click {
+  background-color: green;
+}
