@@ -1,11 +1,15 @@
-const clickButton = document.querySelectorAll("body");
+const clickButton = document.querySelectorAll("div");
+clickButton.forEach((item) => {
+  item.addEventListener("click", show);
+});
 const box = document.querySelectorAll(".box");
-clickButton.addEventListener("click", show);
-console.log(typeof(clickButton))
 function show() {
-  // box.forEach((item) =>{
-  //     item.classList.add('.click')
-  // })
- 
+  box.forEach((item) => {
+    // item.classList.add('.click')
+    item.style.backgroundColor = "red";
+  });
+
+  //  clickButton.classList.toggle(".click");
+  // box.style.backgroundColor = "red"
   console.log("red");
 }

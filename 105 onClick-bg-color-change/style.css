@@ -4,6 +4,7 @@
   margin: 0;
 }
 body {
+  margin: 1rem;
   width: 150px;
   height: 150px;
   display: flex;
