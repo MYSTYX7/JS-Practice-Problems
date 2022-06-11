@@ -1,15 +1,11 @@
-const clickButton = document.querySelectorAll("div");
-clickButton.forEach((item) => {
-  item.addEventListener("click", show);
-});
-const box = document.querySelectorAll(".box");
-function show() {
-  box.forEach((item) => {
-    // item.classList.add('.click')
-    item.style.backgroundColor = "red";
-  });
+const containerEl = document.querySelector(".container");
+const boxEl = document.querySelectorAll(".box");
 
-  //  clickButton.classList.toggle(".click");
-  // box.style.backgroundColor = "red"
-  console.log("red");
-}
+containerEl.addEventListener("click", (e) => {
+  // console.log(e.target)
+  if (!e.target.matches(".box")) return;
+  boxEl.forEach((el) => {
+    el.classList.remove("active");
+  });
+  e.target.classList.add("active");
+});
